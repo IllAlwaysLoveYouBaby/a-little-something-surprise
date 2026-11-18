@@ -55,7 +55,7 @@ const petals=document.getElementById('petals');
 for(let i=0;i<18;i++){const p=document.createElement('span');p.className='petal';p.style.left=(Math.random()*100)+'%';p.style.animationDuration=(12+Math.random()*13)+'s';p.style.animationDelay=(-Math.random()*22)+'s';p.style.opacity=(.35+Math.random()*.45).toFixed(2);petals.appendChild(p)}
 let player=null,playerReady=false,openingTapped=false;
 const tag=document.createElement('script');tag.src='https://www.youtube.com/iframe_api';document.head.appendChild(tag);
-window.onYouTubeIframeAPIReady=function(){player=new YT.Player('player',{width:'160',height:'90',videoId:'ueVEVfyQIRA',playerVars:{playsinline:1,controls:1,rel:0},events:{onReady:function(){playerReady=true;if(openingTapped){try{player.playVideo()}catch(e){}}}}})};
+window.onYouTubeIframeAPIReady=function(){player=new YT.Player('player',{width:'160',height:'90',videoId:'PXHS35FNOxU',playerVars:{playsinline:1,controls:1,rel:0},events:{onReady:function(){playerReady=true;if(openingTapped){try{player.playVideo()}catch(e){}}}}})};
 document.getElementById('openButton').addEventListener('click',function(){
 openingTapped=true;
 if(playerReady&&player){try{player.playVideo()}catch(e){}}
